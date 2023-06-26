@@ -1,0 +1,6 @@
+@mixin main($margin, $padding, $text-align, $background-color){
+    margin: 10px;
+    padding: 25px;
+    text-align: center;
+    background-color: whitesmoke;
+}

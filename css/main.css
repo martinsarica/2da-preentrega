@@ -1,21 +1,10 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
-
-body {
-  font-family: 'Nunito', sans-serif;
-  background-color: whitesmoke; }
-
+@import url("https://fonts.googleapis.com/css2?family=Kanit&family=Nunito:wght@300&family=Roboto:ital,wght@0,100;1,900&display=swap");
 header {
   align-items: center;
   padding: 10px;
-  /* background-image: url(../img/backround-header.webp); */
-  background-color: #441919;
-  height: 100px;
-  font-size: 1.3rem; }
-  header nav {
-    background-color: #441919; }
+  height: 35vh;
+  font-size: 1.3rem;
+  background-color: rgba(4, 4, 197, 0.267); }
 
 main {
   margin: 10px;
@@ -26,27 +15,110 @@ main {
     text-align: center;
     margin-top: 10px;
     margin-bottom: 40px; }
+  main p {
+    font-size: 18px; }
   main .img-inicio img {
     width: 100%;
     height: 100%;
     object-fit: cover; }
-  main p {
-    margin: 10px;
-    padding: 20px; }
+  main .cont-parrafo-inicio {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: "Nunito", sans-serif;
+    line-height: 30px; }
+  main .contenedor-btn-recomendaciones {
+    font-size: 25px;
+    margin-top: 80px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  main .btn-recomendaciones {
+    background-color: rgba(4, 4, 197, 0.753);
+    color: whitesmoke;
+    height: 50px;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.281); }
+    main .btn-recomendaciones a {
+      color: whitesmoke;
+      text-decoration: none;
+      font-size: 15px; }
+  main .contenedor-recomendaciones {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: "Nunito", sans-serif; }
+    main .contenedor-recomendaciones ol {
+      text-align: justify;
+      justify-content: center;
+      padding-left: 5%;
+      padding-right: 5%;
+      align-items: center;
+      line-height: 160%; }
+      main .contenedor-recomendaciones ol li {
+        padding: 10px; }
+      main .contenedor-recomendaciones ol p {
+        font-size: 20px; }
+    main .contenedor-recomendaciones .conclusion-recomendaciones {
+      padding-top: 60px; }
+  main .cards-inicio {
+    text-align: center;
+    padding: 12px;
+    background-color: whitesmoke; }
+    main .cards-inicio h2 {
+      margin-top: 10vh;
+      margin-bottom: 3vh; }
+  main .card-contenedor-marcas {
+    display: flex;
+    flex-wrap: wrap;
+    height: 25%;
+    width: 100%;
+    margin: 0px;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10px;
+    padding: 10px;
+    background-color: whitesmoke; }
+    main .card-contenedor-marcas :hover {
+      transform: scale(1.02);
+      transition: 0.5s; }
+  main .card-marcas {
+    box-shadow: 3px 5px 5px rgba(61, 61, 61, 0.774);
+    width: 40vh;
+    border-radius: 5px;
+    height: 35vh; }
+  main .card-marcas-banner {
+    height: 75%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px; }
+  main .card-marcas-logo {
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    margin: 2.5%; }
+    main .card-marcas-logo img {
+      height: 7vh;
+      width: 13vh;
+      object-fit: cover;
+      justify-content: center;
+      border: 2px solid black; }
   main .productos {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(7, 500px); }
+    main .productos div img {
+      width: 70%;
+      height: 50%;
+      object-fit: cover; }
   main .productos-cards {
     width: 80%;
     height: 90%;
     border: 2px 2px 2px solid black;
     padding: 10px;
     margin-left: 25px; }
-  main .productos div img {
-    width: 70%;
-    height: 50%;
-    object-fit: cover; }
   main .boton-producto {
     text-align: center;
     align-items: center;
@@ -60,172 +132,199 @@ main {
     main .boton-producto:hover {
       background-color: green;
       transform: scale(1.02); }
-  main .sucursal {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, 1fr);
+  main .contenedor-sucursales {
+    display: flex;
     justify-items: center;
-    row-gap: 40px;
-    height: 100vh; }
-    main .sucursal iframe {
+    flex-direction: column;
+    height: 70vh; }
+  main .sucursales {
+    margin: 20px; }
+    main .sucursales iframe {
       width: 350px;
-      height: 380px;
-      object-fit: cover; }
+      height: 250px; }
   main .contenedor-contacto {
     box-shadow: 0 0 20px 0 rgba(5, 5, 5, 0.3); }
-  main .contenedor-contacto > * {
-    padding: 1em; }
   main .contacto {
     background-color: whitesmoke; }
-  main .contacto form {
-    display: grid;
-    grid-template-columns: 1fr 1fr; }
-  main .contacto form label {
-    display: block; }
-  main .contacto form p {
-    margin: 0;
-    padding: 1em; }
-  main .contacto form .block {
-    grid-column: 1 / 3; }
-  main .contacto form button,
-  main .contacto form input,
-  main .contacto form textarea {
-    width: 100%;
-    padding: .7em;
-    border: none;
-    background: none;
-    outline: 0;
-    color: #181717;
-    border-bottom: 1px solid #272626; }
-  main .contacto form button {
-    background: #441919;
-    color: whitesmoke;
-    text-transform: uppercase;
-    padding: 1em; }
-  main .contacto form button:hover,
-  main .contacto form button:focus {
-    background: #23643e;
-    color: #ddd6d6;
-    transition: background-color 1s ease-out;
-    outline: 0; }
+    main .contacto form {
+      display: grid;
+      grid-template-columns: 1fr 1fr; }
+      main .contacto form label {
+        display: block; }
+      main .contacto form p {
+        margin: 0;
+        padding: 1em; }
+      main .contacto form button,
+      main .contacto form input,
+      main .contacto form textarea {
+        width: 100%;
+        padding: .7em;
+        border: none;
+        background: none;
+        outline: 0;
+        color: #181717;
+        border-bottom: 1px solid #272626; }
+      main .contacto form button {
+        background: rgba(4, 4, 197, 0.753);
+        color: whitesmoke;
+        text-transform: uppercase;
+        padding: 1em;
+        text-align: center; }
+        main .contacto form button :hover,
+        main .contacto form button :focus {
+          background: #23643e;
+          color: #ddd6d6;
+          transition: background-color 1s ease-out;
+          outline: 0; }
   main .contacto-info {
-    background: #441919;
-    color: whitesmoke; }
-  main .contacto-info p {
-    text-align: center; }
+    background: rgba(4, 4, 197, 0.753);
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    main .contacto-info p {
+      text-align: center;
+      width: 80%;
+      line-height: 190%; }
+  main .block {
+    grid-column: 1 / 3; }
 
-footer {
-  background-color: grey;
-  margin-top: 20px;
-  padding: 10px;
-  height: 50px;
-  text-align: center; }
-  footer h2 {
-    color: white; }
-
-section h2 {
-  text-align: center;
-  padding: 10px;
-  background-color: whitesmoke; }
-
-section .card-contenedor-marcas {
-  display: flex;
-  flex-wrap: wrap;
-  height: 25%;
-  width: 100%;
-  margin: 0px;
-  align-items: center;
-  justify-content: space-evenly;
-  gap: 10px;
-  padding: 10px;
-  background-color: whitesmoke; }
-
-section .card-contenedor-marcas :hover {
-  transform: scale(1.02);
-  transition: 0.5s; }
-
-section .card-marcas {
-  box-shadow: 3px 5px 5px rgba(61, 61, 61, 0.774);
-  width: 40vh;
-  border-radius: 5px;
-  height: 35vh; }
-
-section .card-marcas-banner {
-  height: 75%;
-  width: 100%;
-  object-fit: cover;
-  border-radius: 5px; }
-
-section .card-marcas-logo {
-  justify-content: center;
-  align-items: center;
-  width: 30%;
-  margin-left: 33%; }
-
-section .card-marcas-logo img {
-  height: 7vh;
-  width: 13vh;
-  object-fit: cover;
-  justify-content: center;
-  border: 2px solid black; }
-
-/* mq de tablet */
 @media screen and (min-width: 600px) {
-  /* estilos de inicio */
   main .img-inicio img {
     width: 50%;
     height: 50%;
     object-fit: cover; }
-  /* estilos de productos */
-  .productos {
+  main .productos {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr); }
-    .productos div img {
+    main .productos div img {
       width: 60%;
       height: 55%;
       object-fit: cover; }
-  /* estilos de encontranos */
-  .sucursal {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    height: 80%; }
-    .sucursal iframe {
-      width: 500px;
-      height: 450px;
-      align-items: center; } }
+  main .contenedor-sucursales {
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+    height: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center; }
+  main .sucursales {
+    margin: 30px; }
+    main .sucursales iframe {
+      width: 450px;
+      height: 400px;
+      object-fit: cover; } }
 
-/* mq de desktop */
 @media screen and (min-width: 1200px) {
-  /* estilos de inicio */
   main .img-inicio img {
     width: 30%;
     height: 30%;
     object-fit: cover; }
-  /* estilos de productos */
-  .productos {
+  main .btn-recomendaciones {
+    background-color: rgba(4, 4, 197, 0.753);
+    color: whitesmoke;
+    height: 80px;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.281); }
+    main .btn-recomendaciones a {
+      color: whitesmoke;
+      text-decoration: none;
+      font-size: 25px; }
+    main .btn-recomendaciones:hover {
+      transform: scale(1.02); }
+  main .productos {
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     column-gap: 0px;
     row-gap: 10px; }
-    .productos div img {
+    main .productos div img {
       width: 70%;
       height: 60%;
-      object-fit: cover; }
-  /* estilos de contacto */
-  .contenedor-contacto {
+      object-fit: cover;
+      font-size: 20px; }
+  main .contenedor-contacto {
     display: grid;
-    grid-template-columns: 2fr 1fr; }
-  .contenedor-contacto > {
+    grid-template-columns: 2fr 1fr;
     padding: 2em; }
-  .contacto-info p {
+  main .contacto-info p {
     text-align: center;
     font-size: 20px; }
-  /* estilos de encontranos */
-  .sucursal {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
-    height: 80%; }
-    .sucursal iframe {
-      width: 500px;
-      height: 450px;
-      align-items: center; } }
+  main .contenedor-sucursales {
+    display: flex;
+    justify-items: center;
+    flex-direction: row;
+    height: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px; }
+  main .sucursales {
+    margin: 30px; }
+    main .sucursales iframe {
+      width: 550px;
+      height: 400px;
+      object-fit: cover; } }
+
+footer {
+  text-align: center;
+  position: absolute;
+  padding-top: 20px;
+  width: 100%;
+  height: auto;
+  background-color: rgba(4, 4, 197, 0.753); }
+  footer .footer-contenido {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column; }
+    footer .footer-contenido ul {
+      align-items: center;
+      justify-content: center;
+      padding-right: 10px;
+      padding-left: 10px; }
+    footer .footer-contenido h3 {
+      font-size: 1.8rem;
+      font-weight: 400;
+      text-transform: capitalize;
+      line-height: 3rem;
+      color: whitesmoke;
+      text-shadow: 1px 1px 10px #272626; }
+    footer .footer-contenido .footer-redes {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 1rem 0 1rem 0; }
+      footer .footer-contenido .footer-redes li {
+        margin: 10px; }
+      footer .footer-contenido .footer-redes a {
+        text-decoration: none;
+        color: whitesmoke; }
+        footer .footer-contenido .footer-redes a :hover {
+          transform: scale(1.02); }
+      footer .footer-contenido .footer-redes img {
+        font-size: 1.1rem; }
+  footer .footer-bottom {
+    padding: 10px;
+    text-align: center; }
+    footer .footer-bottom p {
+      font-size: 14px;
+      word-spacing: 2px;
+      text-transform: capitalize;
+      color: whitesmoke;
+      text-shadow: 1px 1px 10px #272626; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: "Kanit", sans-serif;
+  background-color: whitesmoke; }

@@ -1,0 +1,288 @@
+    main {
+        //estilos generales
+
+        @include main (10px, 25px, center, whitesmoke);
+
+        h1 {
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 40px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        //estilos de inicio
+
+        .img-inicio img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .cont-parrafo-inicio {
+            display: flex;
+            flex-wrap: wrap;
+            font-family: $fuente-secundaria;
+            line-height: 30px;
+        }
+
+
+
+        //estilo de button recomendaciones
+
+        .contenedor-btn-recomendaciones {
+            font-size: 25px;
+            margin-top: 80px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .btn-recomendaciones {
+            background-color: $color-principal;
+            color: whitesmoke;
+            height: 50px;
+            padding: 5px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.281);
+
+            a {
+                color: whitesmoke;
+                text-decoration: none;
+                font-size: 15px;
+            }
+        }
+
+        //estilos de recomendaciones
+
+        .contenedor-recomendaciones {
+            display: flex;
+            flex-wrap: wrap;
+            font-family: $fuente-secundaria;
+
+            ol {
+
+                text-align: justify;
+                justify-content: center;
+                padding-left: 5%;
+                padding-right: 5%;
+                align-items: center;
+                line-height: 160%;
+
+                li {
+                    padding: 10px;
+                }
+
+
+                p {
+                    font-size: 20px;
+                }
+            
+            }
+
+            .conclusion-recomendaciones{
+                padding-top: 60px;
+            }
+        }
+        
+
+        //estilo cards de marcas
+
+        .cards-inicio {
+            text-align: center;
+            padding: 12px;
+            background-color: whitesmoke;
+
+            h2 {
+                margin-top: 10vh;
+                margin-bottom: 3vh;
+
+            }
+        }
+
+        .card-contenedor-marcas {
+            display: flex;
+            flex-wrap: wrap;
+            height: 25%;
+            width: 100%;
+            margin: 0px;
+            align-items: center;
+            justify-content: space-evenly;
+            gap: 10px;
+            padding: 10px;
+            background-color: whitesmoke;
+
+            :hover {
+                transform: scale(1.02);
+                transition: 0.5s;
+            }
+        }
+
+        .card-marcas {
+            box-shadow: 3px 5px 5px rgba(61, 61, 61, 0.774);
+            width: 40vh;
+            border-radius: 5px;
+            height: 35vh;
+        }
+
+        .card-marcas-banner {
+            height: 75%;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        .card-marcas-logo {
+            justify-content: center;
+            align-items: center;
+            width: 30%;
+            margin: 2.5%;
+
+            img {
+                height: 7vh;
+                width: 13vh;
+                object-fit: cover;
+                justify-content: center;
+                border: 2px solid black;
+            }
+        }
+
+
+        // estilos de producto
+
+        .productos {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(7, 500px);
+
+            div img {
+                width: 70%;
+                height: 50%;
+                object-fit: cover;
+            }
+        }
+
+        .productos-cards {
+            width: 80%;
+            height: 90%;
+            border: 2px 2px 2px solid black;
+            padding: 10px;
+            margin-left: 25px;
+        }
+
+        .boton-producto {
+            text-align: center;
+            align-items: center;
+            margin: 20px;
+            color: whitesmoke;
+            background-color: rgb(59, 58, 58);
+            height: 30px;
+            width: 100px;
+            font-size: 15px;
+            border-radius: 5px;
+
+            &:hover {
+                background-color: green;
+                transform: scale(1.02);
+            }
+        }
+
+
+
+        //estilos de encontranos
+
+        .contenedor-sucursales {
+            display: flex;
+            justify-items: center;
+            flex-direction: column;
+            height: 70vh;
+        }
+
+        .sucursales {
+            margin: 20px;
+
+            iframe {
+                width: 350px;
+                height: 250px;
+            }
+        }
+
+
+        //estilos de contacto
+
+        .contenedor-contacto {
+            box-shadow: 0 0 20px 0 rgba(5, 5, 5, 0.3);
+        }
+
+
+        .contacto {
+            background-color: whitesmoke;
+
+            form {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+
+                label {
+                    display: block;
+                }
+
+                p {
+                    margin: 0;
+                    padding: 1em;
+                }
+
+                button,
+                input,
+                textarea {
+                    width: 100%;
+                    padding: .7em;
+                    border: none;
+                    background: none;
+                    outline: 0;
+                    color: #181717;
+                    border-bottom: 1px solid #272626;
+                }
+
+                button {
+                    background: $color-principal;
+                    color: whitesmoke;
+                    text-transform: uppercase;
+                    padding: 1em;
+                    text-align: center;
+
+                    :hover,
+                    :focus {
+                        background: #23643e;
+                        color: #ddd6d6;
+                        transition: background-color 1s ease-out;
+                        outline: 0;
+                    }
+                }
+            }
+        }
+
+        .contacto-info {
+            background: $color-principal;
+            color: whitesmoke;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            p {
+                text-align: center;
+                width: 80%;
+                line-height: 190%;
+
+            }
+        }
+
+        .block {
+            grid-column: 1 / 3;
+        }
+    }

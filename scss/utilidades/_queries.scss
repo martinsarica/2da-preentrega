@@ -1,0 +1,141 @@
+// mq de tablet
+
+@media screen and (min-width: 600px) {
+
+  // estilos de inicio
+
+  main {
+
+    .img-inicio img {
+      width: 50%;
+      height: 50%;
+      object-fit: cover;
+    }
+
+    // estilos de productos
+
+    .productos {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+
+      div img {
+        width: 60%;
+        height: 55%;
+        object-fit: cover;
+      }
+    }
+
+    //estilos de encontranos
+
+    .contenedor-sucursales {
+      display: flex;
+      justify-items: center;
+      flex-direction: column;
+      height: 100%;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .sucursales {
+      margin: 30px;
+
+      iframe {
+        width: 450px;
+        height: 400px;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+
+
+// mq de desktop
+
+@media screen and (min-width: 1200px) {
+
+  main {
+    //estilos de inicio
+
+    .img-inicio img {
+      width: 30%;
+      height: 30%;
+      object-fit: cover;
+    }
+
+    .btn-recomendaciones {
+      background-color: rgba(4, 4, 197, 0.753);
+      color: whitesmoke;
+      height: 80px;
+      padding: 15px;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.281);
+       a{
+          color: whitesmoke;
+          text-decoration: none;
+          font-size: 25px;
+      }
+
+      &:hover{
+        transform: scale(1.02);
+      }
+    }
+  
+
+    //estilos de productos
+
+    .productos {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      column-gap: 0px;
+      row-gap: 10px;
+
+      div img {
+        width: 70%;
+        height: 60%;
+        object-fit: cover;
+        font-size: 20px;
+      }
+    }
+
+    //estilos de contacto
+
+    .contenedor-contacto {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      padding: 2em;
+    }
+
+    .contacto-info p {
+      text-align: center;
+      font-size: 20px;
+    }
+
+    //estilos de encontranos
+
+    .contenedor-sucursales {
+      display: flex;
+      justify-items: center;
+      flex-direction: row;
+      height: 100%;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 30px;
+    }
+
+    .sucursales {
+      margin: 30px;
+
+      iframe {
+        width: 550px;
+        height: 400px;
+        object-fit: cover;
+      }
+    }
+  }
+}
